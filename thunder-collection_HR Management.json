@@ -1,0 +1,432 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "HR Management",
+    "dateExported": "2023-07-13T13:11:13.617Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5e218b2f-3bcb-417c-87da-71b97bb50396",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "register user",
+            "url": "http://127.0.0.1:8000/api/registeruser/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-16T02:35:48.723Z",
+            "modified": "2023-03-17T03:15:55.502Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "Rahul"
+                    },
+                    {
+                        "name": "email",
+                        "value": "husain@123.com"
+                    },
+                    {
+                        "name": "contact",
+                        "value": "62732183"
+                    },
+                    {
+                        "name": "is_admin",
+                        "value": "True"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345"
+                    },
+                    {
+                        "name": "password2",
+                        "value": "12345"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "profile_image",
+                        "value": "c:\\Users\\Yusuf\\Desktop\\background.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "66c4c159-4b61-4492-9522-ad5686629278",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "login User",
+            "url": "http://127.0.0.1:8000/api/loginuser/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-17T03:43:25.241Z",
+            "modified": "2023-05-31T06:32:59.063Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "admin"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123456"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b1abe548-4807-4884-a440-6df897da7f75",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "Get logged user profile",
+            "url": "http://127.0.0.1:8000/api/loggeduserprofile/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-03-17T09:27:15.491Z",
+            "modified": "2023-06-02T12:27:26.313Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NzI2ODE2LCJpYXQiOjE2ODU3MDg4MTYsImp0aSI6IjBhMTZkNWM0ODFkNTQ1NzJhNDZiZmE2NGY2OWNkMTM1IiwidXNlcl9pZCI6MSwiaXNfYWRtaW4iOnRydWV9.FoTnkrk_iocr-xRYt5J5t9u5WJgsso8fcGXs3SKN9R4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c5aaf76e-1156-43b5-a57e-24d7b4abe407",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "get all user profile",
+            "url": "http://127.0.0.1:8000/api/alluserprofile/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-03-17T09:37:47.057Z",
+            "modified": "2023-06-06T05:39:23.123Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MDQ1MTY0LCJpYXQiOjE2ODYwMjcxNjQsImp0aSI6ImE2MTc1Mzk5MDhhZDRhYmI4NDBlZTU4Mjc0YzYzY2Q4IiwidXNlcl9pZCI6MSwiaXNfYWRtaW4iOnRydWV9.bcTfaxUFtjv3PiAzBiMk3eU4ZunTT10btUPusxqav3w"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8049d511-2ea3-4c25-981b-b8149defdfb3",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "update user data ",
+            "url": "http://127.0.0.1:8000/api/updateuser/",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-03-18T03:19:50.094Z",
+            "modified": "2023-03-18T05:27:39.097Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 3,\n  \"username\": \"Sonam\",\n  \"email\": \"husain@hotmail.com\",\n  \"contact\": \"23618763\",\n  \"is_admin\": true\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MTE3NTM1LCJpYXQiOjE2NzkxMTcyMzUsImp0aSI6ImRlODM3ZTk3YmRjMTQxMDk4MTJkNzk0NjQ2M2EzOThlIiwidXNlcl9pZCI6M30.Fs_SyG9pxNe-oen9XHjRowINA61rNh_EcjLrzCSCl_c"
+            },
+            "tests": []
+        },
+        {
+            "_id": "52f45f37-2170-45f1-8b68-62a8eb5d4fb7",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "Apply New Leave ",
+            "url": "http://127.0.0.1:8000/api/applynewleave/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-03-21T15:13:35.257Z",
+            "modified": "2023-06-14T06:51:53.557Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"date_from\":\"2023-06-14T12:03:20Z\",\n  \"date_to\":\"2023-06-14T12:03:20Z\",\n  \"reason\":\"gjhgajsdyvdjavdjav\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2NzQzNDM5LCJpYXQiOjE2ODY3MjU0MzksImp0aSI6IjJjNWJiNWNiZGIxODQ2Y2Q4OWZhYTRlNmQyMTMzMDY0IiwidXNlcl9pZCI6MiwiaXNfYWRtaW4iOnRydWV9.rAW55aGtVmfgy7f4vQIEgWuYvxL13qxTgaIyhVmyEU0"
+            },
+            "tests": []
+        },
+        {
+            "_id": "719d9655-afd7-40bf-9525-d2af55a8db3b",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "get logged user leave",
+            "url": "http://127.0.0.1:8000/api/getloggeduserleave/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-03-22T11:06:59.441Z",
+            "modified": "2023-03-22T15:03:29.655Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NDk3NjQ2LCJpYXQiOjE2Nzk0OTczNDYsImp0aSI6IjJiZmEzNDQ2MzQ1ZDQ2ZDViMmI2YzhlYTE0YzIzYzIwIiwidXNlcl9pZCI6MSwiaXNfYWRtaW4iOnRydWV9.xgLXwg43TZv3Sfld66maYjmgWp6_hnLprLXUIvCMP-M"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b29d36ef-a4de-480e-9237-01f8f554ebf9",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "Change User Leave ",
+            "url": "http://127.0.0.1:8000/api/changeuserleave/3/",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-03-22T15:16:23.831Z",
+            "modified": "2023-06-12T04:03:40.484Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2NTU4NTY3LCJpYXQiOjE2ODY1NDA1NjcsImp0aSI6Ijg5YjU5MTY5OTAxODQ3Y2NiYjA3ZDIxYjE4NjAzMGQ5IiwidXNlcl9pZCI6MiwiaXNfYWRtaW4iOnRydWV9.unQdyLgYS7PBklodGK_JpB2WzYittP6jpsut_9Tf0y4"
+            },
+            "tests": []
+        },
+        {
+            "_id": "262a907d-4e29-4447-88bd-9408f695e6fa",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "Create New Application",
+            "url": "http://127.0.0.1:8000/api/createnewapplication/",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-03-30T09:28:40.388Z",
+            "modified": "2023-06-23T10:04:26.859Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"hussaintinwala79@gmail.com\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NTMyNjU3LCJpYXQiOjE2ODc1MTQ2NTcsImp0aSI6IjBlZDc5OTE3Y2Q4ODQ5MzBiMzFmZjg1M2UxMGUyYWEyIiwidXNlcl9pZCI6MiwiaXNfYWRtaW4iOnRydWV9.VynMXTMyKa1Owc6r7sBDGsJ9LSpRTH_7yzDHaNeWYpM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f452e468-ec33-4c4c-ab5d-67753c800262",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "Put Applicant data",
+            "url": "http://127.0.0.1:8000/api/putapplicantdetail/6dcd7cc397c44bda9efbdce3ba91c0b8/",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-03-31T09:28:59.995Z",
+            "modified": "2023-06-23T10:06:16.185Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ea47afe4-eceb-4fa0-968a-b6e7eaccf717",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "get resume",
+            "url": "http://127.0.0.1:8000/api/getresumedetail/",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-03-31T14:42:54.255Z",
+            "modified": "2023-06-13T05:48:03.419Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2NjUzMjAyLCJpYXQiOjE2ODY2MzUyMDIsImp0aSI6ImQxNzQ0MjFmZTdhNzRlOTViNzgxOTI4YjdmYTUyNGRmIiwidXNlcl9pZCI6MiwiaXNfYWRtaW4iOnRydWV9.Mb_hq0A7as0ou5DEDSmpzNDEifbTzxHIAyEml2R0Zbc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c26d60ff-8df2-4c2a-bae8-7d507f185d07",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "get all user leave",
+            "url": "http://127.0.0.1:8000/api/getalluserleave/",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-05-16T08:30:09.669Z",
+            "modified": "2023-06-12T03:29:41.964Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2NTU4NTY3LCJpYXQiOjE2ODY1NDA1NjcsImp0aSI6Ijg5YjU5MTY5OTAxODQ3Y2NiYjA3ZDIxYjE4NjAzMGQ5IiwidXNlcl9pZCI6MiwiaXNfYWRtaW4iOnRydWV9.unQdyLgYS7PBklodGK_JpB2WzYittP6jpsut_9Tf0y4"
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4a021c0-1a09-4c96-95f9-3a7ba2a10982",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/api/",
+            "url": "http://127.0.0.1:8000/api/refreshtoken/",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-05-31T11:51:52.824Z",
+            "modified": "2023-06-06T10:22:33.546Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"refresh\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4NjEzMzMwNCwiaWF0IjoxNjg2MDQ2OTA0LCJqdGkiOiJjY2E2YzJhMjZhNmE0NWUwYTgwYjM2MTc0YTM3YmZmOCIsInVzZXJfaWQiOjEsImlzX2FkbWluIjp0cnVlfQ.SDLBdwVf4UlRPOBSUCzhTZqoksrokEAYXzpxVRoCV30\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "dd276cbc-6f27-4175-b6ef-8d24336a8340",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "Get single profile ",
+            "url": "http://127.0.0.1:8000//api/getuserprofile/2/",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-06-06T10:59:28.649Z",
+            "modified": "2023-06-08T06:58:09.713Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MjI1NDcyLCJpYXQiOjE2ODYyMDc0NzIsImp0aSI6ImJkOGZjZDdlNzM2ODQ0ZDRhNzIzNTI4M2FmNzRkNjNjIiwidXNlcl9pZCI6MiwiaXNfYWRtaW4iOnRydWV9.aH_rWbbfzepK5j92spnibCAR5dNvWlAcNsg8RUmJmJk"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7e18b242-5cb5-49b8-bcf0-fb1db79749db",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "userprofileupdate",
+            "url": "http://127.0.0.1:8000//api/userprofileupdate/",
+            "method": "PUT",
+            "sortNum": 160000,
+            "created": "2023-06-08T06:57:32.343Z",
+            "modified": "2023-06-08T07:05:18.551Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MjI1NDcyLCJpYXQiOjE2ODYyMDc0NzIsImp0aSI6ImJkOGZjZDdlNzM2ODQ0ZDRhNzIzNTI4M2FmNzRkNjNjIiwidXNlcl9pZCI6MiwiaXNfYWRtaW4iOnRydWV9.aH_rWbbfzepK5j92spnibCAR5dNvWlAcNsg8RUmJmJk"
+            },
+            "tests": []
+        },
+        {
+            "_id": "47cf5088-edc4-45f4-b93e-5d3aa3e41a6e",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "Get all anouncement ",
+            "url": "http://127.0.0.1:8000/api/newannouncement/",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-06-13T14:01:40.627Z",
+            "modified": "2023-06-13T14:03:54.641Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"announcement\":\"Hello Everyone\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2NjgyOTA1LCJpYXQiOjE2ODY2NjQ5MDUsImp0aSI6ImYzYTE2NGI0NDZhNTQxODY4YjM0ZTNkODQzYzUzOWNlIiwidXNlcl9pZCI6MiwiaXNfYWRtaW4iOnRydWV9.UydFiZhb6emo38w-yp-EIhmBpBUvPhvKumNBMgj2-6I"
+            },
+            "tests": []
+        },
+        {
+            "_id": "4d38b163-6c6f-4140-b751-c188940f4e75",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "Send Reset password Email",
+            "url": "",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-06-16T04:47:56.063Z",
+            "modified": "2023-06-16T04:47:56.064Z",
+            "headers": []
+        },
+        {
+            "_id": "e57a440a-90ae-4eac-994a-5c2ce150f041",
+            "colId": "2ca2f78d-6f1b-46b6-9075-54927afc8100",
+            "containerId": "",
+            "name": "get dashboard Data ",
+            "url": "http://127.0.0.1:8000/api/getdashboarddata/",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2023-06-17T10:35:05.750Z",
+            "modified": "2023-06-17T10:35:37.461Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3MDE2MDg0LCJpYXQiOjE2ODY5OTgwODQsImp0aSI6IjY4NmRlNGZlMmRkMjQyOTg5ZmE5NzEzMzBkODg0NDQwIiwidXNlcl9pZCI6MiwiaXNfYWRtaW4iOnRydWV9.m7N8wfTb9Zkb4nTLGsWZq1uLDtcMUnkOlpXWGYSir4k"
+            },
+            "tests": []
+        }
+    ]
+}
